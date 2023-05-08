@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>De_IMS</title>
+</head>
+<body>
+    <table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for product in products %}
+      <tr>
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.brand_name }}</td>
+        <td>{{ product.product_type }}</td>
+        <td>{{ product.quantity_available }}</td>
+        <td>{{ product.cost_price }}</td>
+        <td>{{ product.selling_price }}</td>
+        <td>{{ product.date_added }}</td>
+        <td>{{ product.date_bought }}</td>
+        <td>{{ product.other_info }}</td>
+        <td>{{ product.date_updated }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</body>
+</html>
